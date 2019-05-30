@@ -1,0 +1,27 @@
+* {
+	background-color: black;
+}
+.container {
+	text-align: center;
+	font-family: helvetica, Arial, sans-serif;
+	font-size: 30px;
+}
+.list {
+	font-size: 50px;
+}
+a[href="http://google.com"]{
+	color: blue;
+}
+a[href="http://yandex.ru"]{
+	color: red;
+}
+a[href="http://yahoo.com"]{
+	color: purple;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.container h1, .container p {
+	color: white;
+}

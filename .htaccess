@@ -1,0 +1,31 @@
+Options -Indexes
+
+RewriteEngine on
+
+php_flag display_errors on
+php_flag display_startup_errors on
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php [NC,L,QSA]
+
+ErrorDocument 404 /pages/404.php
+ErrorDocument 401 /pages/404.php
+
+<Files "recaptchalib.php">
+Order Allow,Deny
+Deny from all
+</Files>
+<Files "dir.php">
+Order Allow,Deny
+Deny from all
+</Files>
+<Files "db.php">
+Order Allow,Deny
+Deny from all
+</Files>
+<Files "config.php">
+Order Allow,Deny
+Deny from all
+</Files>
